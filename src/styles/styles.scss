@@ -1,0 +1,28 @@
+@import "./base/helpers.scss";
+@import "./base/basic.scss";
+
+@import "./components/app-header.scss";
+@import "./components/app-footer.scss";
+@import "./components/toy-list.scss";
+@import "./components/toy-preview.scss";
+@import "./components/toy-filter.scss";
+
+@import "./views/toy-edit.scss";
+@import "./views/toy-details.scss";
+@import "./views/toy-app.scss";
+@import "./views/toy-dashboard.scss";
+
+.stores-map {
+  display: flex;
+  margin-top: 1rem;
+}
+.locations {
+  margin: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.location-btn {
+  margin: 2rem;
+  cursor: pointer;
+}
