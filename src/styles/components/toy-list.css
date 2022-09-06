@@ -1,0 +1,22 @@
+.toy-list {
+  overflow-y: scroll;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  box-shadow: 2px 2px 14px #000;
+    margin: 1rem;
+}
+
+.toy-list-container {
+  margin: 2rem;
+  background-color: lightcoral;
+  border-radius: 1rem;
+}
+
+.toy-list-container button {
+  margin: 1rem;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+.actions{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+.toy-app{
+    height: 100%;
+}
