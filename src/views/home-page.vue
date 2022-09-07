@@ -109,14 +109,29 @@
 					</boxes>
 				</div>
 			</section>
+			<section class="sec3">
+				<div class="content-vid">
+					<h2>Just another text</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. In nulla
+						expedita obcaecati quas enim accusantium sint, vero labore veritatis
+						iusto ad aliquid perspiciatis dicta qui. Tempora, blanditiis
+						nesciunt! Ullam, debitis.
+					</p>
+				</div>
+				<div class="video-wrapper">
+					<video
+						src="../assets/dyson-mop.mp4"
+						type="video/mp4"
+						autoplay
+						muted
+						loop
+						id="dyson">
+						<!-- <source src="../assets/dyson-mop.mp4" type="video/mp4" /> -->
+					</video>
+				</div>
+			</section>
 		</div>
-		<section class="sec3">
-			<div class="video-wrapper">
-				<video autoplay muted loop id="dyson">
-					<source src="../assets/dyson-mop.mp4" type="video/mp4" />
-				</video>
-			</div>
-		</section>
 	</main>
 </template>
 

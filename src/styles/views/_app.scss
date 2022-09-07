@@ -78,3 +78,28 @@
         }
     }
 }
+section.sec3 {
+    display: flex;
+
+    align-items: center;
+    gap: 50px;
+    .video-wrapper {
+        max-width: 80%;
+        width: 900px;
+        height: 521px;
+        /* max-height: 69vh; */
+        flex: 6;
+
+        video#dyson {
+            width: 100%;
+            /* max-width: 635px; */
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+            box-shadow: 1px 1px 18px 2px #00000066;
+        }
+        .content-vid {
+            flex: 3;
+        }
+    }
+}
