@@ -1,9 +1,11 @@
 <template>
-  <section>
+  <div class="outer-container">
+
     <!-- <app-header /> -->
     <router-view />
     <!-- <app-footer /> -->
-  </section>
+
+  </div>
 </template>
 
 <script>

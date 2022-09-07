@@ -1,28 +1,22 @@
-@import "./base/helpers.scss";
-@import "./base/basic.scss";
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Orbitron&display=swap" rel="stylesheet"');
+//setup
+@import "./setup/setup";
+@import "./setup/functions";
 
-@import "./components/app-header.scss";
-@import "./components/app-footer.scss";
-@import "./components/toy-list.scss";
-@import "./components/toy-preview.scss";
-@import "./components/toy-filter.scss";
 
-@import "./views/toy-edit.scss";
-@import "./views/toy-details.scss";
-@import "./views/toy-app.scss";
-@import "./views/toy-dashboard.scss";
+@import "./base/helpers";
+@import "./base/basic";
 
-.stores-map {
-  display: flex;
-  margin-top: 1rem;
-}
-.locations {
-  margin: 2rem;
-  text-align: center;
-  font-size: 1.4rem;
-}
+@import "./components/app-header";
+@import "./components/app-footer";
+@import "./components/toy-list";
+@import "./components/toy-preview";
+@import "./components/toy-filter";
+@import "./components/app-version";
+@import "./components/app-boxex";
 
-.location-btn {
-  margin: 2rem;
-  cursor: pointer;
-}
+@import "./views/toy-edit";
+@import "./views/toy-details";
+@import "./views/app";
+@import "./views/toy-dashboard";
+

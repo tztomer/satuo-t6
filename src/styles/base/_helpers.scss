@@ -1,6 +1,9 @@
 .flex {
   display: flex;
 }
+.flex-wrap{
+  flex-wrap: wrap;
+}
 
 .flex.column{
   flex-direction: column;
@@ -16,4 +19,12 @@
 
 .flex.space-around{
   justify-content: space-around;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.box-radius{
+  border-radius: 6px;
 }
