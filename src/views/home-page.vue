@@ -15,6 +15,7 @@
 							</h3>
 						</div>
 						<dysonVersion></dysonVersion>
+						<safety />
 					</div>
 					<div class="right-sec1">
 						<img src="../assets/withstik.png" alt="" srcset="" />
@@ -37,6 +38,11 @@
 			</section>
 			<section class="sec2 flex flex-wrap">
 				<div class="inner-wrapper">
+					<h2>
+						<b>300,000</b><br />
+						מכירות באירופה ב 2021
+					</h2>
+
 					<boxes>
 						<template v-slot:strip>
 							<span class="small">STRONG WHEELS</span>
@@ -104,16 +110,25 @@
 				</div>
 			</section>
 		</div>
+		<section class="sec3">
+			<div class="video-wrapper">
+				<video autoplay muted loop id="dyson">
+					<source src="../assets/dyson-mop.mp4" type="video/mp4" />
+				</video>
+			</div>
+		</section>
 	</main>
 </template>
 
 <script>
 	import dysonVersion from "../components/app-version.cmp.vue";
 	import boxes from "../components/app-text-boxes.cmp.vue";
+	import safety from "../components/app-safe.cmp.vue";
 	export default {
 		components: {
 			dysonVersion,
 			boxes,
+			safety,
 		},
 	};
 </script>

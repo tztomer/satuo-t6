@@ -1,10 +1,11 @@
 .versions {
-    width: fit-content;
+    width: max-content;
+
     display: inline;
     padding: 10px 20px;
     border: 1px solid $clr6;
     border-radius: 100px;
-    color:$clr2;
- 
+    color: $clr2;
+
     letter-spacing: 2px;
 }

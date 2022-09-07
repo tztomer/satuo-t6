@@ -3,7 +3,6 @@
 @import "./setup/setup";
 @import "./setup/functions";
 
-
 @import "./base/helpers";
 @import "./base/basic";
 
@@ -14,9 +13,9 @@
 @import "./components/toy-filter";
 @import "./components/app-version";
 @import "./components/app-boxex";
+@import "./components/app-safety";
 
 @import "./views/toy-edit";
 @import "./views/toy-details";
 @import "./views/app";
 @import "./views/toy-dashboard";
-
