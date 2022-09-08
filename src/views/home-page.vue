@@ -131,6 +131,102 @@
 					</video>
 				</div>
 			</section>
+			<section class="sec3">
+				<div class="video-wrapper">
+					<video
+						src="../assets/dyson2.mp4"
+						type="video/mp4"
+						autoplay
+						muted
+						loop
+						id="dyson">
+						<!-- <source src="../assets/dyson-mop.mp4" type="video/mp4" /> -->
+					</video>
+				</div>
+				<div class="content-vid">
+					<h2>Just another text</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. In nulla
+						expedita obcaecati quas enim accusantium sint, vero labore veritatis
+						iusto ad aliquid perspiciatis dicta qui. Tempora, blanditiis
+						nesciunt! Ullam, debitis.
+					</p>
+				</div>
+			</section>
+			<section class="sec4">
+				<div @click="addRemoveClass($event)" class="options">
+					<div
+						class="option active"
+						style="--optionBackground: url(src/assets/box-1.png)">
+						<div class="shadow"></div>
+						<div class="label">
+							<div class="icon">
+								<i class="fas fa-walking"></i>
+							</div>
+							<div class="info">
+								<div class="main">Blonkisoaz</div>
+								<div class="sub">Omuke trughte a otufta</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="option"
+						style="--optionBackground: url(src/assets/box2.png)">
+						<div class="shadow"></div>
+						<div class="label">
+							<div class="icon">
+								<i class="fas fa-snowflake"></i>
+							</div>
+							<div class="info">
+								<div class="main">Oretemauw</div>
+								<div class="sub">Omuke trughte a otufta</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="option"
+						style="--optionBackground: url(src/assets/withstik.png)">
+						<div class="shadow"></div>
+						<div class="label">
+							<div class="icon">
+								<i class="fas fa-tree"></i>
+							</div>
+							<div class="info">
+								<div class="main">Iteresuselle</div>
+								<div class="sub">Omuke trughte a otufta</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="option"
+						style="--optionBackground: url(src/assets/hols.png)">
+						<div class="shadow"></div>
+						<div class="label">
+							<div class="icon">
+								<i class="fas fa-tint"></i>
+							</div>
+							<div class="info">
+								<div class="main">Idiefe</div>
+								<div class="sub">Omuke trughte a otufta</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="option"
+						style="--optionBackground: url(src/assets/water.png)">
+						<div class="shadow"></div>
+						<div class="label">
+							<div class="icon">
+								<i class="fas fa-sun"></i>
+							</div>
+							<div class="info">
+								<div class="main">Inatethi</div>
+								<div class="sub">Omuke trughte a otufta</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</main>
 </template>
@@ -139,7 +235,29 @@
 	import dysonVersion from "../components/app-version.cmp.vue";
 	import boxes from "../components/app-text-boxes.cmp.vue";
 	import safety from "../components/app-safe.cmp.vue";
+	// import { ref, onMounted, unref, shallowRef, onBeforeUnmount } from "vue";
+
 	export default {
+		setup() {
+			function addRemoveClass(ev) {
+				const options = document.querySelectorAll(".option");
+				options.forEach((op) => {
+					op.classList.remove("active");
+				});
+				ev.target.classList.add("active");
+			}
+			return {
+				addRemoveClass,
+				// options,
+			};
+		},
+
+		data() {
+			return {
+				isActive: false,
+			};
+		},
+		methods: {},
 		components: {
 			dysonVersion,
 			boxes,
