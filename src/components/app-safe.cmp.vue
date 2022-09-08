@@ -1,5 +1,5 @@
 <template>
-	<img class="safety" src="../assets/safty.png" alt="" />
+	<img class="safety" src="/safty.png" alt="" />
 </template>
 <script>
 	export default {

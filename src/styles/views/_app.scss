@@ -1,6 +1,6 @@
 .sec1 {
     height: 100vh;
-    // background-image: url('../assets/logoname.png');
+    // background-image: url('./logoname.png');
     // background-repeat: no-repeat;
 
     display: flex;
@@ -10,7 +10,7 @@
     &::after {
         content: "";
         position: absolute;
-        background-image: url("../assets/logoname.png");
+        background-image: url("./logoname.png");
         background-repeat: no-repeat;
         left: -50px;
         background-position: top 100px center;

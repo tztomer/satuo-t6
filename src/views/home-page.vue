@@ -18,7 +18,7 @@
 						<safety />
 					</div>
 					<div class="right-sec1">
-						<img src="../assets/withstik.png" alt="" srcset="" />
+						<img src="/withstik.png" alt="" srcset="" />
 					</div>
 				</div>
 				<div class="footer-sec1">
@@ -56,7 +56,7 @@
 						</template>
 
 						<template v-slot:img>
-							<img src="../assets/box2.png" alt="" srcset=""
+							<img src="/box2.png" alt="" srcset=""
 						/></template>
 					</boxes>
 					<boxes>
@@ -72,7 +72,7 @@
 						</template>
 
 						<template v-slot:img>
-							<img src="../assets/box2.png" alt="" srcset=""
+							<img src="/box2.png" alt="" srcset=""
 						/></template>
 					</boxes>
 					<boxes>
@@ -88,7 +88,7 @@
 						</template>
 
 						<template v-slot:img>
-							<img src="../assets/box2.png" alt="" srcset=""
+							<img src="/box2.png" alt="" srcset=""
 						/></template>
 					</boxes>
 					<boxes>
@@ -104,7 +104,7 @@
 						</template>
 
 						<template v-slot:img>
-							<img src="../assets/box2.png" alt="" srcset=""
+							<img src="/box2.png" alt="" srcset=""
 						/></template>
 					</boxes>
 				</div>
@@ -121,26 +121,26 @@
 				</div>
 				<div class="video-wrapper">
 					<video
-						src="../assets/dyson-mop.mp4"
+						src="/dyson-mop.mp4"
 						type="video/mp4"
 						autoplay
 						muted
 						loop
 						id="dyson">
-						<!-- <source src="../assets/dyson-mop.mp4" type="video/mp4" /> -->
+						<!-- <source src="/dyson-mop.mp4" type="video/mp4" /> -->
 					</video>
 				</div>
 			</section>
 			<section class="sec3">
 				<div class="video-wrapper">
 					<video
-						src="../assets/dyson2.mp4"
+						src="/dyson2.mp4"
 						type="video/mp4"
 						autoplay
 						muted
 						loop
 						id="dyson">
-						<!-- <source src="../assets/dyson-mop.mp4" type="video/mp4" /> -->
+						<!-- <source src="/dyson-mop.mp4" type="video/mp4" /> -->
 					</video>
 				</div>
 				<div class="content-vid">
@@ -169,9 +169,7 @@
 							</div>
 						</div>
 					</div>
-					<div
-						class="option"
-						style="--optionBackground: url(./assets/box2.png)">
+					<div class="option" style="--optionBackground: url(./box2.png)">
 						<div class="shadow"></div>
 						<div class="label">
 							<div class="icon">
@@ -183,9 +181,7 @@
 							</div>
 						</div>
 					</div>
-					<div
-						class="option"
-						style="--optionBackground: url(./src/assets/withstik.png)">
+					<div class="option" style="--optionBackground: url(./withstik.png)">
 						<div class="shadow"></div>
 						<div class="label">
 							<div class="icon">
@@ -197,9 +193,7 @@
 							</div>
 						</div>
 					</div>
-					<div
-						class="option"
-						style="--optionBackground: url(./src/assets/hols.png)">
+					<div class="option" style="--optionBackground: url(./hols.png)">
 						<div class="shadow"></div>
 						<div class="label">
 							<div class="icon">
@@ -211,9 +205,7 @@
 							</div>
 						</div>
 					</div>
-					<div
-						class="option"
-						style="--optionBackground: url(./src/assets/water.png)">
+					<div class="option" style="--optionBackground: url(./water.png)">
 						<div class="shadow"></div>
 						<div class="label">
 							<div class="icon">
