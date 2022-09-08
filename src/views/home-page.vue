@@ -155,9 +155,7 @@
 			</section>
 			<section class="sec4">
 				<div @click="addRemoveClass($event)" class="options">
-					<div
-						class="option active"
-						style="--optionBackground: url(/box-1.png)">
+					<div class="option active" style="--optionBackground: url(/t61.jpg)">
 						<div class="shadow"></div>
 						<div class="label">
 							<div class="icon">
@@ -169,7 +167,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="option" style="--optionBackground: url(./box2.png)">
+					<div class="option" style="--optionBackground: url(/t62.jpg)">
 						<div class="shadow"></div>
 						<div class="label">
 							<div class="icon">
@@ -181,7 +179,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="option" style="--optionBackground: url(./withstik.png)">
+					<div class="option" style="--optionBackground: url(/t63.jpg)">
 						<div class="shadow"></div>
 						<div class="label">
 							<div class="icon">
@@ -193,7 +191,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="option" style="--optionBackground: url(./hols.png)">
+					<div class="option" style="--optionBackground: url(/t64.jpg)">
 						<div class="shadow"></div>
 						<div class="label">
 							<div class="icon">
@@ -205,7 +203,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="option" style="--optionBackground: url(./water.png)">
+					<div class="option" style="--optionBackground: url(/t65.jpg)">
 						<div class="shadow"></div>
 						<div class="label">
 							<div class="icon">
