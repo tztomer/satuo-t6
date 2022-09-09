@@ -2,7 +2,7 @@
     max-width: 630px;
     height: 10rem;
     width: 100%;
-
+    min-height: clamp(372px, 220px, 100px);
     position: relative;
     background-color: $clr3;
     padding-block-start: 20px;

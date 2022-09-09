@@ -46,7 +46,7 @@ section.show {
             height: 100%;
             img {
                 object-fit: fill;
-                max-width: max(673px, 530px);
+                max-width: clamp(650px, 1000px, 600px);
                 position: absolute;
                 top: 16%;
                 left: 1%;
@@ -77,10 +77,13 @@ section.show {
     /* width: 100%; */
     /* flex: 1; */
     /* display: block; */
-    grid-area: 1/1 / span 1 / span 2;
-    /* justify-items: right; */
-    text-align: center;
-    white-space: break-spaces;
+    height: 100%;
+    h2 {
+        grid-area: 1/1 / span 1 / span 2;
+        /* justify-items: right; */
+        text-align: center;
+        white-space: break-spaces;
+    }
     b {
         font-size: 66px;
         color: $clr4;
