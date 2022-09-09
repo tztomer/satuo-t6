@@ -1,7 +1,7 @@
 <template>
 	<main class="home-page">
 		<div class="inner-container">
-			<section class="sec1 overflow-hidden">
+			<section class="sec1">
 				<div class="top-sec1">
 					<div class="left-sec1">
 						<div class="heading text-shadow">
@@ -36,7 +36,8 @@
 					>
 				</div>
 			</section>
-			<section class="sec2 flex flex-wrap">
+
+			<section class="sec2">
 				<div class="inner-wrapper">
 					<h2>
 						<b>300,000</b><br />
@@ -109,7 +110,7 @@
 					</boxes>
 				</div>
 			</section>
-			<section class="sec3">
+			<section class="sec3 videos">
 				<div class="content-vid">
 					<h2>Just another text</h2>
 					<p>
@@ -131,7 +132,7 @@
 					</video>
 				</div>
 			</section>
-			<section class="sec3">
+			<section class="sec4 videos">
 				<div class="video-wrapper">
 					<video
 						src="/dyson2.mp4"
@@ -153,7 +154,7 @@
 					</p>
 				</div>
 			</section>
-			<section class="sec4">
+			<section class="sec5">
 				<div @click="addRemoveClass($event)" class="options">
 					<div class="option active" style="--optionBackground: url(/t61.jpg)">
 						<div class="shadow"></div>
@@ -225,10 +226,29 @@
 	import dysonVersion from "../components/app-version.cmp.vue";
 	import boxes from "../components/app-text-boxes.cmp.vue";
 	import safety from "../components/app-safe.cmp.vue";
-	// import { ref, onMounted, unref, shallowRef, onBeforeUnmount } from "vue";
+	import { ref, onMounted, unref, shallowRef, onBeforeUnmount } from "vue";
+	import { entries } from "lodash";
 
 	export default {
 		setup() {
+			const section = ref("");
+			onMounted(() => {
+				const obsorver = new IntersectionObserver(
+					(entries) => {
+						entries.forEach((entry) => {
+							// section.value = entry.target.getAttribute("tag");
+							entry.target.classList.toggle("show", entry.isIntersecting);
+							console.log("section", entry.target);
+						});
+					},
+					{ rootMargin: "-200px", trashold: 0.3 },
+				);
+				const allSections = document.querySelectorAll("section");
+				// console.log("test", test);
+				allSections.forEach((section) => {
+					obsorver.observe(section);
+				});
+			});
 			function addRemoveClass(ev) {
 				const options = document.querySelectorAll(".option");
 				options.forEach((op) => {
