@@ -22,7 +22,7 @@ section.show {
     &::after {
         content: "";
         position: absolute;
-        background-image: url("./logoname.png");
+        background-image: url("/logoname.png");
         background-repeat: no-repeat;
         left: -50px;
         background-position: top 100px center;
