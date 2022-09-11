@@ -14,31 +14,7 @@ const router = createRouter({
       name: "home",
       component: homePage,
     },
-    // {
-    //   path: "/toy",
-    //   name: "toy-app",
-    //   component: toyApp,
-    // },
-    // {
-    //   path: "/toy/:toyId",
-    //   name: "toy-details",
-    //   component: toyDetails,
-    // },
-    // {
-    //   path: "/toy/edit/:toyId?",
-    //   name: "toy-edit",
-    //   component: toyEdit,
-    // },
-    // {
-    //   path: "/dashboard",
-    //   name: "dashboard",
-    //   component: dashboardPage,
-    // },
-    // {
-    //   path: "/about",
-    //   name: "about",
-    //   component: aboutPage,
-    // },
+    
   ],
 });
 
